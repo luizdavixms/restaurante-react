@@ -1,0 +1,88 @@
+/* Definindo as cores */
+:root {
+    --cinza-escuro: #3A3F44;
+    --azul-claro: #A1B2C1;
+    --cinza-azulado: #B2B9C1;
+    --azul-bem-claro: #F4F8FA;
+    --azul-medio: #6A7883;
+  }
+  
+  /* Resetando margens e padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--azul-bem-claro); /* fundo principal */
+    color: var(--cinza-escuro); /* cor do texto */
+    line-height: 1.6;
+    min-height: 100vh; /* Garantindo que o conteúdo ocupe toda a altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para garantir que o conteúdo ocupe toda a tela */
+  }
+  
+  /* Container principal */
+  .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centralizando os elementos verticalmente */
+    align-items: center; /* Centralizando os elementos horizontalmente */
+    flex-grow: 1; /* Garantindo que a seção de conteúdo cresça para ocupar espaço */
+  }
+  
+  /* Cabeçalho */
+  .header {
+    background-color: var(--azul-claro); /* azul claro */
+    padding: 20px;
+    text-align: center;
+    color: var(--cinza-escuro);
+    width: 100%; /* Garantindo que ocupe toda a largura */
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  /* Seção de conteúdo */
+  .content {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--azul-bem-claro); /* fundo principal */
+    width: 100%; /* Garantindo que ocupe toda a largura */
+    max-width: 800px; /* Limitando a largura para não ficar muito largo */
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    color: var(--cinza-escuro);
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: var(--azul-medio); /* azul médio */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--cinza-azulado); /* cinza azulado */
+  }
+  
+  /* Rodapé */
+  .footer {
+    background-color: var(--cinza-azulado);
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    width: 100%; /* Garantindo que ocupe toda a largura */
+  }
+  
