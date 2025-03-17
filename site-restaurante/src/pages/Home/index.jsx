@@ -7,7 +7,7 @@ function Home() {
     <>
       <div className='container'> 
         <h1>Bem Vindo ao ...</h1>
-        <p>Selecione uma das opções abaixo</p>
+        <p>Selecione uma das opções abaixo:</p>
 
       <div className='botaoContainer'>
         <Link to="/Cardapio">
