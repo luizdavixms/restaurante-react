@@ -1,13 +1,12 @@
 import React from 'react';
-import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 
 function Cardapio() {
   return (
     <>
       <div>
-        <h1>Cardapio</h1>
+        <Header />
       </div>
-      <Footer />
     </>
   );
 }
