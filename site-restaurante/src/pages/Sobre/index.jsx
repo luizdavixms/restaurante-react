@@ -3,7 +3,7 @@ import React from 'react';
 function Sobre() {
   return(
     <div>
-      <h1>Sobre Nos</h1>
+      <h1>Sobre </h1>
     </div>
   );
 }

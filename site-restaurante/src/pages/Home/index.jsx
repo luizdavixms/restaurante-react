@@ -1,21 +1,32 @@
+import React from 'react';
+import "./index.css"
+import { Link } from "react-router-dom"
 
-
-function App() {
+function Home() {
   return (
-    <div style={{ 
-       backgroundImage: "linear-gradient(109.6deg,#B22222  11.2%, BLACK 91.1%)",  
-      backgroundColor: "#1D1D1D", 
-      minHeight: "100vh", 
-      display: "flex", 
-      flexDirection: "column", 
-      justifyContent: "center", 
-      alignItems: "center", 
-      color: "white",
-      textAlign: "center"
-    }}>
+    <>
+      <div className='container'> 
+        <h1>Home</h1>
 
-      <h1>Bem-vindo ao Restaurante!</h1>
-    </div>
+      <div className='botaoContainer'>
+        <Link to="/Cardapio">
+          <button className="botaoCardapio">Cardapio</button>
+        </Link>
+
+        <Link to="/Reservas">
+          <button className="botaoReservas">Reservas</button>
+        </Link>
+
+        <Link to="Localizacao">
+          <button className="botaoLocalizacao">Localizacao</button>
+        </Link>
+
+        <Link to="Sobre">
+          <button className="botaoSobre">Sobre</button>
+        </Link>
+      </div>
+      </div>
+    </>
   );
 }
 
