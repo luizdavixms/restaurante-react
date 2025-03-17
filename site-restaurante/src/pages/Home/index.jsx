@@ -6,7 +6,8 @@ function Home() {
   return (
     <>
       <div className='container'> 
-        <h1>Home</h1>
+        <h1>Bem Vindo ao ...</h1>
+        <p>Selecione uma das opções abaixo</p>
 
       <div className='botaoContainer'>
         <Link to="/Cardapio">
