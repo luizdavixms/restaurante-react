@@ -1,0 +1,42 @@
+/* Primeiro, importamos a fonte */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Agora, aplicamos a fonte */
+h1, p {
+    font-family: 'Dancing Script', cursive; /* Aplica a fonte Dancing Script */
+}
+
+.box-1 {
+    display: flex;               /* Flexbox ativo */
+    flex-direction: row;         /* Organiza os itens na linha (horizontal) */
+    margin: 20px;
+    align-items: center;         /* Centraliza os itens verticalmente */
+    padding: 20px;               /* Espaçamento interno */
+}
+
+.imagem-box-1 {
+    width: 50%;                  /* A imagem ocupa 50% do espaço */
+    height: auto;                /* Mantém a proporção da imagem */
+    margin-right: 20px;          /* Espaçamento entre a imagem e o texto */
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1, p {
+    flex: 1;                     /* Faz o texto ocupar o restante do espaço */
+    margin: 0;                   /* Remove margens indesejadas */
+}
+
+p {
+    word-wrap: break-word;       /* Quebra de linha para o texto longo */
+    font-size: 25px;
+}
+
+.linhaDivisoria {
+    background-color: rgb(154, 154, 154);
+    height: 3px;
+    opacity: 0.3;
+}
