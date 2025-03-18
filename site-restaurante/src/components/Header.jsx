@@ -15,9 +15,8 @@ function Header() {
             <Link to="/Localizacao" className='navLink'>Localizacao</Link>
             <Link to="/Reservas" className='navLink'>Reservas</Link>
         </nav>
-        <div className='linhaSeparacao'>
-        
-        </div>
+        <div className='linhaSeparacao'></div>
+        <div></div>
     </header>
   );
 }
