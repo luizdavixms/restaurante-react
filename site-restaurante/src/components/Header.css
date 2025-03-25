@@ -1,0 +1,41 @@
+header {
+    display: flex; 
+    justify-content: space-between; /* Espaço máximo entre logo e links */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 0px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Estilo da logo */
+.logoImagem {
+    width: 150px; /* Ajuste o tamanho da logo */
+    height: auto;
+}
+
+/* Container dos links */
+.containerNavLinks {
+    display: flex; /* Deixa os links em linha */
+    gap: 25px; /* Espaçamento entre os links */
+    margin-left: 350px;
+}
+
+/* Links individuais */
+.navLink {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.3s ease;
+}
+
+/* Efeito hover bonito */
+.navLink:hover {
+    color: #4CAF50;
+}
+
+/* Linha de separação decorativa */
+.linhaSeparacao {
+    height: 2px;
+    background-color: #ddd;
+}
