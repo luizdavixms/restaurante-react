@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from "../../components/Header";
-import "./index.css";  // Garanta que o CSS está sendo importado corretamente
+import "./index.css";
 import primeiraImagem from "../../assets/primeiraImagem.jpg";
+import foto from "../../assets/foto.jpg"
 
 function Sobre() {
   return (
@@ -42,13 +43,31 @@ function Sobre() {
         </div>
       </div>
       <div className='box-3'>
+        <h3 className='equipe-titulo'>Conheça nossa equipe</h3>
         <div className='perfil-luiz'>
-          <img></img>
+          <img src={foto} alt="Luiz" className='foto-equipe' />
+          <div className='informacoes-luiz'>
+            <p>Luiz Davi Ximenes</p>
+            <div className='redes-sociais'>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.linkedin.com/in/luiz-davi-ximenes-miranda-rocha-a0983a267/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p>Celular: (61) 99644-2004</p>
+          </div>
         </div>
         <div className='perfil-kauan'>
-          <img></img>
+          <img src={foto} alt="Kauan" className='foto-equipe' />
+          <div className='informacoes-kauan'>
+            <p>Kauan de Oliveira</p>
+            <div className='redes-sociais'>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p>Celular: (XX) XXXXX-XXXX</p>
+          </div>
         </div>
       </div>
+
     </>
   );
 }
