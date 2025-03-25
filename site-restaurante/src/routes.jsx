@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from "./pages/Home"
-import Cardapio from "./pages/Cardapio"
-import Localizacao from "./pages/Localizacao"
-import Reservas from "./pages/Reservas"
-import Sobre from "./pages/Sobre"
+import Home from './pages/Home/Home';
+import Cardapio from "./pages/Cardapio/Cardapio"
+import Localizacao from "./pages/Localizacao/Localizacao"
+import Reservas from "./pages/Reservas/Reserva"
+import Sobre from "./pages/Sobre/Sobre"
 
 function AppRoutes() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import useDeslizar from '../../hooks/useDeslizar';
 import Header from "../../components/Header";
-import "./index.css";
+import "./Sobre.css";
 import primeiraImagem from "../../assets/primeiraImagem.jpg";
 import foto from "../../assets/foto.jpg"
 
