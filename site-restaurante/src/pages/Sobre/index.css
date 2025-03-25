@@ -1,23 +1,28 @@
-/* Primeiro, importamos a fonte */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
-/* Agora, aplicamos a fonte */
-h1, p {
-    font-family: 'Dancing Script', cursive; /* Aplica a fonte Dancing Script */
+/* Aplica Montserrat no h1 e h3 */
+h1, h3 {
+    font-family: 'Montserrat', sans-serif; 
 }
 
+/* Aplica Merriweather no p */
+p {
+    font-family: 'Merriweather', serif; 
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+/* Resto do seu código */
 .box-1 {
-    display: flex;               /* Flexbox ativo */
-    flex-direction: row;         /* Organiza os itens na linha (horizontal) */
+    display: flex;
+    flex-direction: row;
     margin: 20px;
-    align-items: center;         /* Centraliza os itens verticalmente */
-    padding: 20px;               /* Espaçamento interno */
+    align-items: center;
+    padding: 20px;
 }
 
 .imagem-box-1 {
-    width: 50%;                  /* A imagem ocupa 50% do espaço */
-    height: auto;                /* Mantém a proporção da imagem */
-    margin-right: 20px;          /* Espaçamento entre a imagem e o texto */
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
     border-radius: 10px;
 }
 
@@ -26,17 +31,45 @@ h1 {
 }
 
 h1, p {
-    flex: 1;                     /* Faz o texto ocupar o restante do espaço */
-    margin: 0;                   /* Remove margens indesejadas */
-}
-
-p {
-    word-wrap: break-word;       /* Quebra de linha para o texto longo */
-    font-size: 25px;
+    flex: 1;
+    margin: 0;
 }
 
 .linhaDivisoria {
     background-color: rgb(154, 154, 154);
     height: 3px;
     opacity: 0.3;
+}
+
+.box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 80%;
+    flex-wrap: wrap;
+}
+
+.missao, .visao, .valores {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.missao:hover, .visao:hover, .valores:hover {
+    background-color: #B9F6CA;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-box-2 {
+    margin-bottom: 40px;
+    font-size: 23px;
 }
