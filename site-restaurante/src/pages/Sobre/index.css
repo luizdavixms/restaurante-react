@@ -5,7 +5,19 @@ body {
     box-sizing: border-box;
 }
 
-h1, h3 {
+.deslizar {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.deslizar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1,
+h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -35,7 +47,8 @@ h1 {
     margin: 0;
 }
 
-h1, p {
+h1,
+p {
     flex: 1;
     margin: 0;
 }
@@ -57,7 +70,9 @@ h1, p {
     flex-wrap: wrap;
 }
 
-.missao, .visao, .valores {
+.missao,
+.visao,
+.valores {
     flex: 1;
     min-width: 200px;
     text-align: center;
@@ -68,7 +83,9 @@ h1, p {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.missao:hover, .visao:hover, .valores:hover {
+.missao:hover,
+.visao:hover,
+.valores:hover {
     background-color: #B9F6CA;
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -82,10 +99,12 @@ h1, p {
 .equipe-titulo {
     text-align: center;
     margin-top: 70px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    font-size: 50px;
 }
 
-.perfil-luiz, .perfil-kauan {
+.perfil-luiz,
+.perfil-kauan {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -93,39 +112,42 @@ h1, p {
 }
 
 .foto-equipe {
-    width: 200px;  
-    height: 200px; 
-    object-fit: cover;  
-    border-radius: 50%;  
-    margin-right: 20px;  
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
-.informacoes-luiz, .informacoes-kauan {
+.informacoes-luiz,
+.informacoes-kauan {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;  
-    margin-left: 20px; 
+    align-items: flex-start;
+    margin-left: 20px;
 }
 
-.informacoes-luiz p, .informacoes-kauan p {
-    margin: 5px 0; 
+.informacoes-luiz p,
+.informacoes-kauan p {
+    margin: 5px 0;
     font-size: 16px;
 }
 
 .redes-sociais a {
     display: block;
     margin: 5px 0;
-    color: #4CAF50;  
+    color: #4CAF50;
     text-decoration: none;
 }
 
 .redes-sociais a:hover {
-    text-decoration: underline;  
+    text-decoration: underline;
 }
 
-.informacoes-luiz, .informacoes-kauan {
-    max-width: 300px;  
+.informacoes-luiz,
+.informacoes-kauan {
+    max-width: 300px;
 }
 
 .box-3 {
@@ -133,4 +155,3 @@ h1, p {
     margin: 0 auto;
     max-width: 80%;
 }
-

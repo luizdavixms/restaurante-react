@@ -1,10 +1,13 @@
 import React from 'react';
+import useDeslizar from '../../hooks/useDeslizar';
 import Header from "../../components/Header";
 import "./index.css";
 import primeiraImagem from "../../assets/primeiraImagem.jpg";
 import foto from "../../assets/foto.jpg"
 
 function Sobre() {
+  useDeslizar()
+
   return (
     <>
       <Header />
@@ -43,8 +46,8 @@ function Sobre() {
         </div>
       </div>
       <div className='box-3'>
-        <h3 className='equipe-titulo'>Conheça nossa equipe</h3>
-        <div className='perfil-luiz'>
+        <h3 className='equipe-titulo deslizar'>Conheça nossa equipe</h3>
+        <div className='perfil-luiz deslizar'>
           <img src={foto} alt="Luiz" className='foto-equipe' />
           <div className='informacoes-luiz'>
             <p>Luiz Davi Ximenes</p>
@@ -55,7 +58,7 @@ function Sobre() {
             <p>Celular: (61) 99644-2004</p>
           </div>
         </div>
-        <div className='perfil-kauan'>
+        <div className='perfil-kauan deslizar'>
           <img src={foto} alt="Kauan" className='foto-equipe' />
           <div className='informacoes-kauan'>
             <p>Kauan de Oliveira</p>
