@@ -1,0 +1,38 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    padding: 30px 40vh; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    font-size: 16px;
+    position: absolute; /* Coloca o footer fixo */
+    bottom: 0; /* Fixa o footer na parte de baixo */
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    justify-content: center; /* Centraliza o conteúdo na horizontal */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+}
+
+/* Estilo para o parágrafo */
+p {
+    color: white; /* Cor do texto */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0; /* Remove qualquer margem ao redor do texto */
+}
+
+/* Estilos gerais para html e body */
+html, body {
+    height: 100%; /* Garante que a altura ocupe toda a tela */
+    margin: 0; /* Remove a margem padrão */
+}
+
+#root {
+    min-height: 100%; /* Garante que o conteúdo ocupe toda a altura possível */
+    display: flex;
+    flex-direction: column; /* Coloca o conteúdo em coluna */
+}
+
+main {
+    flex-grow: 1; /* Faz o conteúdo crescer e empurrar o footer para baixo */
+}

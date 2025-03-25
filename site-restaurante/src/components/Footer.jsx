@@ -1,10 +1,10 @@
+import "./Footer.css"
+
 function Footer() {
     return (
-        <>
-            <div>
-                <p><p>Footer</p></p>
-            </div>
-        </>
+        <footer>
+            <p>© Pizzaria Calabreso</p>
+        </footer>
     );
 }
 
