@@ -22,4 +22,4 @@ const useDeslizar = () => {
   }, []);  
 };
 
-export default useDeslizar;
+export default useDeslizar
