@@ -1,6 +1,7 @@
 import React from 'react';
 import useDeslizar from '../../hooks/useDeslizar';
-import Header from "../../components/Header";
+import Header from "../../components/Header.jsx";
+import Footer from "../../components/Footer.jsx"
 import "./Sobre.css";
 import primeiraImagem from "../../assets/primeiraImagem.jpg";
 import foto from "../../assets/foto.jpg"
@@ -70,7 +71,7 @@ function Sobre() {
           </div>
         </div>
       </div>
-
+      <Footer />
     </>
   );
 }
