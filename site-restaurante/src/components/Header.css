@@ -1,41 +1,92 @@
+/* ======= Header Geral ======= */
 header {
-    display: flex; 
-    justify-content: space-between; /* Espaço máximo entre logo e links */
-    align-items: center; /* Centraliza verticalmente */
-    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between; /* Logo à esquerda e links à direita */
+    align-items: center; /* Centraliza verticalmente os itens */
+    height: 70px; /* Define uma altura menor e uniforme */
+    padding: 5px 100px; /* Espaçamento menor em cima e embaixo */
     background-color: #f8f8f8;
     border-bottom: 2px solid #ddd;
+    box-sizing: border-box; /* Garante que padding não expanda o tamanho do header */
 }
 
-/* Estilo da logo */
+/* ======= Estilo da Logo ======= */
 .logoImagem {
-    width: 150px; /* Ajuste o tamanho da logo */
+    width: 200px;
     height: auto;
+    display: block; /* Tira qualquer espaço extra da imagem */
+    object-fit: contain; /* Garante que a imagem se adapta sem distorcer */
+    margin: auto 0; /* Mantém ela centralizada verticalmente */
 }
 
-/* Container dos links */
+/* ======= Container dos Links ======= */
 .containerNavLinks {
-    display: flex; /* Deixa os links em linha */
+    display: flex;
+    justify-content: flex-end; /* Links grudados à direita */
+    align-items: center;
     gap: 25px; /* Espaçamento entre os links */
-    margin-left: 350px;
 }
 
-/* Links individuais */
+/* ======= Links Individuais com efeito de linha ======= */
 .navLink {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     padding: 5px 10px;
-    transition: 0.3s ease;
+    position: relative; /* Garante que a linha fique dentro do link */
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-/* Efeito hover bonito */
+/* Cria a linha invisível abaixo do link */
+.navLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Linha bem encostada no link */
+    width: 100%;
+    height: 2px;
+    background-color: #333; /* Cor da linha */
+    transform: scaleX(0); /* Começa invisível */
+    transform-origin: left; /* Faz a linha crescer da esquerda pra direita */
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+/* Efeito hover: linha aparece deslizando e muda a cor do link */
 .navLink:hover {
-    color: #4CAF50;
+    color: #555555;
 }
 
-/* Linha de separação decorativa */
+.navLink:hover::after {
+    transform: scaleX(1); /* Linha cresce da esquerda pra direita */
+}
+
+/* ======= Linha de Separação Decorativa (Se quiser manter) ======= */
 .linhaSeparacao {
     height: 2px;
     background-color: #ddd;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* ======= Layout Geral da Página ======= */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Garante que o conteúdo empurre o rodapé pro final */
+#root {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
 }
