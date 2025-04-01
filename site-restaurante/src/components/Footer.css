@@ -1,0 +1,24 @@
+footer {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    padding: 30px 0; /* Ajuste do espaçamento */
+    text-align: center; /* Centraliza o conteúdo */
+    font-size: 16px;
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    position: relative; /* Coloca o footer após o conteúdo da página */
+}
+
+html, body {
+    height: 100%; /* Garante que a altura ocupe toda a tela */
+    margin: 0; /* Remove a margem padrão */
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Garante que o conteúdo ocupe toda a altura possível */
+}
+
+main {
+    flex-grow: 1; /* Faz o conteúdo crescer e empurrar o footer para baixo */
+}

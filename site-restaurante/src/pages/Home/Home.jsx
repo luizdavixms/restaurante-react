@@ -1,13 +1,13 @@
 import React from 'react';
-import "./index.css"
+import "./Home.css"
 import { Link } from "react-router-dom"
 
 function Home() {
   return (
     <>
       <div className='container'> 
-        <h1>Bem Vindo ao ...</h1>
-        <p>Selecione uma das opções abaixo</p>
+        <h1>Bem Vindo</h1>
+        <p>Selecione uma das opções abaixo: </p>
 
       <div className='botaoContainer'>
         <Link to="/Cardapio">

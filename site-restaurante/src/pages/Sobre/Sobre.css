@@ -1,0 +1,157 @@
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.deslizar {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.deslizar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.imagem-box-1 {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+h1,
+p {
+    flex: 1;
+    margin: 0;
+}
+
+.linhaDivisoria {
+    background-color: rgb(154, 154, 154);
+    height: 3px;
+    opacity: 0.3;
+}
+
+.box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 80%;
+    flex-wrap: wrap;
+}
+
+.missao,
+.visao,
+.valores {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.missao:hover,
+.visao:hover,
+.valores:hover {
+    background-color: #B9F6CA;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-box-2 {
+    margin-bottom: 40px;
+    font-size: 23px;
+}
+
+.equipe-titulo {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.perfil-luiz,
+.perfil-kauan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foto-equipe {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.informacoes-luiz,
+.informacoes-kauan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.informacoes-luiz p,
+.informacoes-kauan p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.redes-sociais a {
+    display: block;
+    margin: 5px 0;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.redes-sociais a:hover {
+    text-decoration: underline;
+}
+
+.informacoes-luiz,
+.informacoes-kauan {
+    max-width: 300px;
+}
+
+.box-3 {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 80%;
+}
