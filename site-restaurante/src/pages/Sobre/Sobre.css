@@ -79,16 +79,17 @@ p {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: #6d2212;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .missao:hover,
 .visao:hover,
 .valores:hover {
-    background-color: #B9F6CA;
+    background-color: #6d2212 ;
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
 }
 
 .titulo-box-2 {
@@ -137,7 +138,7 @@ p {
 .redes-sociais a {
     display: block;
     margin: 5px 0;
-    color: #4CAF50;
+    color: #6d2212 ;
     text-decoration: none;
 }
 
