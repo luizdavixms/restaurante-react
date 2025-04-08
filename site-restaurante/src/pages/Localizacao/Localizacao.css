@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+    color: #FFF;
+  }
+  
+  h2 {
+    color: #2b3a42;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  h3 {
+    color: #555;
+  }
+  
+  h4 {
+    color: #777;
+  }
+  
+  /* Descrição da localização */
+  .description {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .description p {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Como chegar */
+  .directions {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  .directions p {
+    font-size: 16px;
+    color: #666;
+    max-width: 800px;
+    margin: 10px auto;
+  }
+  
+  /* Mapa e Google Maps */
+  .google-maps {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .google-maps button {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .google-maps button:hover {
+    background-color: #005bb5;
+  }
+  
